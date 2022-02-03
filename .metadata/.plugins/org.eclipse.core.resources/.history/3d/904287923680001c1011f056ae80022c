@@ -1,0 +1,37 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int num1, age;
+		char gender;
+		String name;
+		
+		num1 = sc.nextInt();
+		age = sc.nextInt();
+		gender = sc.next().charAt(0);
+		sc.nextLine();
+		name = sc.nextLine();
+		
+		System.out.println(num1);
+		System.out.println(age);
+		System.out.println(gender);
+		System.out.println(name);
+		
+		String s = sc.next();
+		char sep = s.charAt(0);
+		
+		System.out.println(s + " " + sep);
+		int dig = Integer.parseInt(s.substring(1));
+		System.out.println(dig);
+		
+		sc.close();
+
+	}	
+
+}

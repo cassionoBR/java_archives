@@ -1,0 +1,11 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String teste = "shupd";
+		String teste2 = (teste == "shupa") ? teste + "a" : teste + "b";
+		System.out.println(teste2);
+	}
+
+}

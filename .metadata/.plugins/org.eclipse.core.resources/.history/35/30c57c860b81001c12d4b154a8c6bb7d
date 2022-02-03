@@ -1,0 +1,29 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String teste = "shupd";
+		String teste2 = (teste == "shupa") ? teste + "a" : teste + "b";
+		System.out.println(teste2);
+	}
+	
+	public static int max(int a, int b, int c) {
+		
+		int maior;
+		
+		if (a > b && a > c) {
+			maior = a;
+		}
+		else if (b > c) {
+			maior = b;
+		}
+		else if (a == b ||a == c || b == c) {
+			maior = a;
+		}
+		else {
+			maior = c;
+		}
+		return maior;
+	}
+}

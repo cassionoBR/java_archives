@@ -1,0 +1,46 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int quant1, quant2;
+		double price1, price2, totalPrice;
+		
+		System.out.println("First product code: ");
+		int code1 = sc.nextInt();
+		System.out.println("Product quanties: ");
+		quant1 = sc.nextInt();
+		System.out.print("Product price: ");
+		price1 = sc.nextDouble();
+		System.out.println("Secound product code: ");
+		int code2 = sc.nextInt();
+		System.out.println("Product quanties: ");
+		quant2 = sc.nextInt();
+		System.out.println("Product price: ");
+		price2 = sc.nextDouble();
+		
+		double tot1 = quant1 * (double)price1;
+		double tot2 = quant2 * (double)price2;
+		totalPrice = tot1 + tot2;
+		
+		System.out.println("Your shoppings: ");
+		System.out.println();
+		System.out.println("Products quanties " + (quant1 + quant2));
+		System.out.println("Products price: ");
+		System.out.println("First product = " + price1);
+		System.out.println("Secound product = " + price2);
+		System.out.println();
+		System.out.println("Total amount payable = " + totalPrice);
+		
+		
+		sc.close();
+		
+	}
+
+}

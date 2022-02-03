@@ -1,0 +1,11 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		int troco = 25;
+		int desconto = (troco < 20)? troco * 2 : troco * 5;
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package application;
+
+import intities.registor;
+
+
+public class program {
+
+	public static void main(String[] args) {
+		
+		
+		String name = "cassio";
+		String email = "cassio@gmail.com";
+		int student = 3;
+		registor[] vect = new registor(student, name, email);
+		
+	}
+
+}

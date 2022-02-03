@@ -1,0 +1,34 @@
+package intities;
+
+public class registor {
+	
+	private String name;
+	private String email;
+	private int studentroom;
+	
+	public registor(int studentroom, String name, String email) {
+		this.name = name;
+		this.email = email;
+		this.studentroom = studentroom;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+	public void dados();
+	
+}

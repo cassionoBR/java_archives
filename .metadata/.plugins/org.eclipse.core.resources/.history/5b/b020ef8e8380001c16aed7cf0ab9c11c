@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int start, end, duration;
+		
+		System.out.println("Beginning of the game: ");
+		start = sc.nextInt();
+		System.out.println("End of the game: ");
+		end = sc.nextInt();
+		
+		duration = 24 - (start - end);
+		
+		if ( duration >= 1 && duration <= 24  ) {
+			
+			System.out.println("The game lasted for " + duration + " hours");
+		}
+		
+		else if (duration == 0) {
+			System.out.println("the game lasted for " + duration + " hours");
+		}
+		
+		else {
+			
+			System.out.println("Error! wrong data entry.");
+			
+		}
+		
+		sc.close();
+
+	}
+
+}

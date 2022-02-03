@@ -1,0 +1,46 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int user, A, G, D;
+		boolean conti;
+		
+		A = G = D = 0;
+				
+		conti = true;
+		
+		while (conti) {
+		
+			System.out.println("Fuels:");
+			System.out.println("1 - Alcohol."); 
+			System.out.println("2 - Gasoline.");
+			System.out.println("3 - Diesel.");
+			System.out.println("Enter your option: ");
+			user = sc.nextInt();
+		
+			switch (user) {
+			 	case 1: {
+			 		A += 1;
+			 	}
+			 	case 2: {
+			 		G += 1;
+			 	}
+			 	case 3: {
+			 		D += 1;
+			 	}
+			 	case 4: {
+			 		conti = false;
+			 	}
+			}
+		
+		}
+		System.out.println(A + G + D);
+		sc.close();
+	}	
+}

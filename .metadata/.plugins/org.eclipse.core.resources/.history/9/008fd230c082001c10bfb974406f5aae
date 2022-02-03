@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num, in, out;
+		
+		System.out.print("Enter a number: ");
+		num = sc.nextInt();
+		
+		in = out = 0;
+		
+		for (int i = 0; i <= num; i++) {
+				
+				int test = sc.nextInt();
+				if (test >= 10 && test <= 20) {
+					in += 1;
+				}
+				else {
+					out += 1;
+				}
+		}
+		
+		sc.close();
+	}	
+}

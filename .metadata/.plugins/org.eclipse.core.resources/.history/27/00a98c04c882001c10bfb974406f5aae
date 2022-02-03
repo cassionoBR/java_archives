@@ -1,0 +1,41 @@
+import java.util.Scanner;
+import java.util.jar.Attributes.Name;
+
+import entities.product;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		product produto = new product();
+		
+		System.out.println("Enter product data:");
+		System.out.print("Name: ");
+		produto.name = sc.nextLine();
+		System.out.print("Quantity: ");
+		produto.quantity = sc.nextInt();
+		System.out.print("Value: ");
+		produto.value = sc.nextDouble();
+		
+		double total = produto.valueTotal();
+		System.out.println("Value total = " + total);
+		
+		System.out.print("Add item: ");
+		int add = sc.nextInt();
+		produto.addProduct(add);
+		
+		System.out.print("Remove item: ");
+		int remove = sc.nextInt();
+		produto.removeProduct(remove);
+		
+		double total2 = produto.valueTotal();
+		System.out.println(produto);
+
+		
+		
+		
+		
+	}	
+}

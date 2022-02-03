@@ -1,0 +1,24 @@
+package entities;
+
+public class calculator_salary {
+
+	public String name;
+	public double salary;
+	public double tax, netSalary;
+	
+	public void printInfo() {
+		
+		netSalary = salary - tax;
+		System.out.println("Username: " + name);
+		System.out.println("Net salary: " + String.format("%.2f", netSalary));
+		
+	}
+	
+	public double increase(double percentage) {
+		
+		double updateSalary = (salary - tax) + ((salary/100) * percentage);
+		return updateSalary;
+	}
+	
+
+}

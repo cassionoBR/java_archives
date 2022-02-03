@@ -1,0 +1,22 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int user;
+		
+		System.out.println("Fuels:");
+		System.out.println( "1 - Alcohol." + "%n" +
+							"2 - Gasoline."
+						+	"3 - Diesel.");
+		System.out.println("Enter your option: ");
+	
+		
+		sc.close();
+	}	
+}

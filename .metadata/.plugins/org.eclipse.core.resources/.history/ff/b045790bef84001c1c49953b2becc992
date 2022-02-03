@@ -1,0 +1,38 @@
+package intities;
+
+public class registor {
+	
+	private String name;
+	private String email;
+	private int studentroom;
+	private String[] room = new String[10];
+	
+	public registor(int studentroom, String name, String email) {
+		this.studentroom = studentroom;
+		this.name = name;
+		this.email = email;	
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public void reg (int room, String name, String email) {
+		this.studentroom = room;
+		this.name = name;
+		this.email = email;	
+	}
+	
+}

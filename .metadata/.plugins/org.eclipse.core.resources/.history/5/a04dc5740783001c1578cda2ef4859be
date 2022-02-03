@@ -1,0 +1,60 @@
+package student;
+
+import java.util.Scanner;
+
+
+
+public class student {
+	
+		Scanner sc = new Scanner(System.in);
+	
+		public double num1;
+		public double num2;
+		public double num3;
+		
+		public void collector () {
+			
+			
+			System.out.println("Enter first note: ");
+			num1 = sc.nextDouble();
+			while (num1 > 30 || num1 < 0) {
+				System.out.println("Maximum average > [30].");
+				System.out.println("Enter first note: ");
+				num1 = sc.nextDouble();
+			}
+			
+			num2 = sc.nextDouble();
+			while (num2 > 35 || num2 < 0) {
+				System.out.println("Maximum average > [35].");
+				System.out.println("Enter secound note: ");
+				num2 = sc.nextDouble();
+			}
+			
+			num3 = sc.nextDouble();
+			while (num3 > 35 || num3 < 0) {
+				System.out.println("Maximum average > [35].");
+				System.out.println("Enter third note: ");
+				num3 = sc.nextDouble();
+				
+			double sumAverage = num1 + num2 + num3;
+			return sumAverage;
+		}
+		
+	}
+		public void resultAverage (double sumnotes) {
+			
+			if (sumnotes > 60) {
+				System.out.println("Final grade = " + sumnotes);
+				System.out.println("CONGRATULATION! YOU PASSED.");
+			} 
+			
+			else {
+				System.out.println("Final grade = " + sumnotes);
+				System.out.println("STUDY MORE! FAILED");
+				System.out.println("Missing " + (sumnotes - 60) + "points.");
+			}
+			
+			
+			
+		}
+}

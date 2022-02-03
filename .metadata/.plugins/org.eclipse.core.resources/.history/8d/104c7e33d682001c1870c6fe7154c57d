@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Locale;
+import entities.calculator;
+
+public class application {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		calculator calc = new calculator();
+		
+		double area, perimeter, diagonal;
+		
+		System.out.print("Enter retangle base: ");
+		calc.b = sc.nextDouble();
+		System.out.print("Enter retangle height: ");
+		calc.h = sc.nextDouble();
+		
+		area = calc.area(calc.b, calc.h);
+
+		sc.close();		
+	}	
+}

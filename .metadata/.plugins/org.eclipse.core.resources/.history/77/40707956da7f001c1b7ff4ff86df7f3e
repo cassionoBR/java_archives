@@ -1,0 +1,25 @@
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		String pro1, pro2;
+		double pre1, pre2;
+		int age;
+		char gender;
+		
+		pro1 = "Computer";
+		pro2 = "Office desk";
+		pre1 = 2100.0;
+		pre2 = 650.50;
+		
+		System.out.println("Products: ");
+		System.out.printf("%s, which price is $ %.2f", pro1, pre1);
+		
+
+	}
+
+}

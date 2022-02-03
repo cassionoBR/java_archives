@@ -1,0 +1,16 @@
+package application;
+
+import intities.registor;
+import java.util.Scanner;
+
+
+public class program {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+	}
+
+}

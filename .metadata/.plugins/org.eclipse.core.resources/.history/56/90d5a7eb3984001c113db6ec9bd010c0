@@ -1,0 +1,43 @@
+package utils;
+
+import java.util.Scanner;
+
+public class modBank {
+
+	Scanner input = new Scanner(System.in);
+	
+	private static int cod;
+	public static String name;
+	private static double balance;
+	private static double withdraw;
+	private static double deposit;
+	
+	
+	public modBank(int cod, String name) {
+		this.cod = cod;
+		this.name = name;
+		
+	}
+	
+	public int getCod() {
+		return cod;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void deposit() {
+		double dep = input.nextDouble();
+		this.balance += dep;
+	}
+	
+	public void withdraw() {
+		double wit = input.nextDouble();
+		this.balance -= (wit - 5);
+	}
+}
